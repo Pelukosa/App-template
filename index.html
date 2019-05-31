@@ -18,20 +18,20 @@
   .verticalNav{
     z-index: 1000;
     height: -webkit-fill-available;
-    background:white;
-    box-shadow: 6px 0px 18px -8px #5f5f5f;
-    width: 200px;
+    background:#4e73df;
+    box-shadow: 1px 0px 0px 2px #12508e;
+    width: 270px;
     transition-duration: .2s;
     color: black;
   }
   .esconderNav{
-    left:-200px;
+    left:-270px;
     transition-duration: .2s;
     box-shadow: none;
   }
   .main-container{
     width: calc(100% - 200px);
-    margin-left:200px;
+    margin-left:270px;
     margin-top:56px;
     transition-duration: .2s;
   }
@@ -41,17 +41,32 @@
     transition-duration: .2s;
   }
   .botonNav{
-    margin-left: 200px;
+    margin-left: 270px;
     transition-duration: .2s;
   }
   .moverBotonNav{
     margin-left: 0px;
     transition-duration: .2s;
   }
+  .verticalContainer{
+  }
+  .nav-link{
+    border-bottom: 1px solid #343a4091;
+    padding: 10px 25px;
+    color:white;
+  }
+  .nav-link:hover{
+    color:white;
+    background: #354c8e;
+  }
+  .nav-link:focus{
+    color:white;
+    background: #354c8e;
+  }
 </style>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="z-index: 999;background:#12508e!important;">
-  <a class="navbar-brand botonNav" href="#" id="botonNav" onclick="hiddeNav()"><img style="width:35px;" src="assets/icons/nav-burguer.png"></a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="z-index: 999;background:white!important;">
+  <a class="navbar-brand botonNav" href="#" id="botonNav" onclick="hiddeNav()"><img style="width:35px;" src="assets/icons/nav-burguer.svg"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -59,7 +74,7 @@
   <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
     <ul class="navbar-nav mr-4">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="">
           Cuenta
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left:-100px;">
@@ -72,12 +87,18 @@
     </ul>
   </div>
 </nav>
+
 <nav class="nav flex-column fixed-top verticalNav" id="verticalNav">
-  <a class="nav-link" href="#">Crear trabajo</a>
-  <a class="nav-link" href="#">Pendientes</a>
-  <a class="nav-link" href="#">Completados</a>
-  <a class="nav-link" href="#">Calendario</a>
-  <a class="nav-link" href="#">Mapa</a>
+  <div style="background: #4e73df; height: 62px;">
+    <img style="width:40%;margin: 0 auto;display: block;padding: 15px 0;" src="https://arfix.es/assets/logo.png" alt="">
+  </div>
+  <div class="verticalContainer">   
+  <a class="nav-link" href="#"><span style="padding-right: 10px;"><img style="width: 20px;" src="assets/icons/add.svg" alt=""></span>Crear trabajo</a>
+  <a class="nav-link" href="#"><span style="padding-right: 10px;"><img style="width: 20px;" src="assets/icons/list.svg" alt=""></span>Pendientes</a>
+  <a class="nav-link" href="#"><span style="padding-right: 10px;"><img style="width: 20px;" src="assets/icons/complete.svg" alt=""></span>Completados</a>
+  <a class="nav-link" href="#"><span style="padding-right: 10px;"><img style="width: 20px;" src="assets/icons/calendar.svg" alt=""></span>Calendario</a>
+  <a class="nav-link" href="#"><span style="padding-right: 10px;"><img style="width: 20px;" src="assets/icons/map.svg" alt=""></span>Mapa</a>
+  </div>
 </nav>
 <div class="main-container" id="main-container">
   <div class="w-100 p-2">
