@@ -1,0 +1,112 @@
+a{
+    color:#5f5f5f;
+  }
+  .verticalNav{
+    z-index: 1000;
+    height: -webkit-fill-available;
+    background:#4e73df;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 270px;
+    transition-duration: .2s;
+    color: black;
+  }
+  .esconderNav{
+    left:-270px;
+    transition-duration: .2s;
+    box-shadow: none;
+  }
+  .main-container{
+    width: calc(100% - 270px);
+    margin-left: 270px;
+    margin-top:56px;
+    transition-duration: .2s;
+  }
+  .alargarContainer{
+    width: 100%;
+    margin-left: 0;
+    transition-duration: .2s;
+  }
+  .botonNav{
+    margin-left: 270px;
+    transition-duration: .2s;
+  }
+  .moverBotonNav{
+    margin-left: 0px;
+    transition-duration: .2s;
+  }
+  .nav-link{
+    border-bottom: 1px solid #343a4091;
+    padding: 10px 25px;
+    color:white;
+  }
+  .navLeftText:hover{
+    color:white;
+    background: #354c8e;
+  }
+  .navLeftText:focus{
+    color:white;
+    background: #354c8e;
+  }
+  @media only screen and (max-width: 850px) {
+  .verticalNav{
+    z-index: 1000;
+    height: -webkit-fill-available;
+    background:#4e73df;
+    box-shadow: none;
+    width: 270px;
+    left:-270px;
+    transition-duration: .2s;
+    color: black;
+  }
+  .esconderNav{
+    left:0px;
+    transition-duration: .2s;
+    box-shadow: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  .botonNav{
+    margin-left: 0px;
+    transition-duration: .2s;
+  }
+  .moverBotonNav{
+    margin-left: 270px;
+    transition-duration: .2s;
+  }
+  .main-container{
+    width: 100%;
+    margin-left: 0px;
+    margin-top:56px;
+    transition-duration: .2s;
+  }
+  .alargarContainer{
+    width: 100%;
+    margin-left: 0;
+    transition-duration: .2s;
+  }
+}
+.navTop{
+  z-index: 999;
+  background:white!important;
+}
+.iconBurguer{
+  width: 35px;
+}
+.logo-nav-top{
+  background: #4e73df; 
+  height: 62px;
+}
+.logo-nav-top>img{
+  width:40%;
+  margin: 0 auto;
+  display: block;
+  padding: 15px 0;
+}
+.navLeftText>span{
+  padding-right: 10px;
+}
+.navLeftText>span>img{
+  width: 20px;
+}
+.tableHead>tr>th{
+  border-right:1px solid white;
+}
