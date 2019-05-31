@@ -15,8 +15,8 @@
   a{
     color:#5f5f5f;
   }
-  #verticalNav{
-    z-index: 998;top:55px;
+  .verticalNav{
+    z-index: 1000;
     height: -webkit-fill-available;
     background:white;
     box-shadow: 6px 0px 18px -8px #5f5f5f;
@@ -27,6 +27,7 @@
   .esconderNav{
     left:-200px;
     transition-duration: .2s;
+    box-shadow: none;
   }
   .main-container{
     width: calc(100% - 200px);
@@ -39,10 +40,18 @@
     margin-left: 0;
     transition-duration: .2s;
   }
+  .botonNav{
+    margin-left: 200px;
+    transition-duration: .2s;
+  }
+  .moverBotonNav{
+    margin-left: 0px;
+    transition-duration: .2s;
+  }
 </style>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="z-index: 999;background:#12508e!important;">
-  <a class="navbar-brand" href="#" id="botonNav" onclick="hiddeNav()"><img style="width:35px;" src="assets/icons/nav-burguer.png"></a>
+  <a class="navbar-brand botonNav" href="#" id="botonNav" onclick="hiddeNav()"><img style="width:35px;" src="assets/icons/nav-burguer.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -63,11 +72,12 @@
     </ul>
   </div>
 </nav>
-<nav class="nav flex-column fixed-top" id="verticalNav">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+<nav class="nav flex-column fixed-top verticalNav" id="verticalNav">
+  <a class="nav-link" href="#">Crear trabajo</a>
+  <a class="nav-link" href="#">Pendientes</a>
+  <a class="nav-link" href="#">Completados</a>
+  <a class="nav-link" href="#">Calendario</a>
+  <a class="nav-link" href="#">Mapa</a>
 </nav>
 <div class="main-container" id="main-container">
   <div class="w-100 p-2">
@@ -75,58 +85,31 @@
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Ref.</th>
+      <th scope="col">Cliente</th>
+      <th scope="col">Trabajo</th>
+      <th scope="col">Opciones</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
+      <th scope="row">3</th>
+      <td>O01588-0219</td>
+      <td>Alejandro Recio</td>
+      <td>Construir plataforma</td>
       <td>@mdo</td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Jacob</td>
+      <td>Mark</td>
       <td>Thornton</td>
       <td>@fat</td>
     </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="table">
-  <thead class="thead-light">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
       <td>Larry</td>
+      <td>Mark</td>
       <td>the Bird</td>
       <td>@twitter</td>
     </tr>
@@ -141,6 +124,7 @@
         var mainContainer = document.getElementById("main-container");
         mainContainer.classList.add("alargarContainer");
         var botonNav = document.getElementById("botonNav");
+        botonNav.classList.add("moverBotonNav");
         botonNav.setAttribute("onclick", "showNav();");
       }
       function showNav() {
@@ -149,6 +133,7 @@
         var mainContainer = document.getElementById("main-container");
         mainContainer.classList.remove("alargarContainer");
         var botonNav = document.getElementById("botonNav");
+        botonNav.classList.remove("moverBotonNav");
         botonNav.setAttribute("onclick", "hiddeNav();");
       }
     </script>
