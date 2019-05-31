@@ -30,8 +30,7 @@
     box-shadow: none;
   }
   .main-container{
-    width: calc(100% - 200px);
-    margin-left:270px;
+    width: 100%;
     margin-top:56px;
     transition-duration: .2s;
   }
@@ -48,8 +47,6 @@
     margin-left: 0px;
     transition-duration: .2s;
   }
-  .verticalContainer{
-  }
   .nav-link{
     border-bottom: 1px solid #343a4091;
     padding: 10px 25px;
@@ -63,6 +60,32 @@
     color:white;
     background: #354c8e;
   }
+  @media only screen and (max-width: 700px) {
+  .verticalNav{
+    z-index: 1000;
+    height: -webkit-fill-available;
+    background:#4e73df;
+    box-shadow: none;
+    width: 270px;
+    left:-270px;
+    transition-duration: .2s;
+    color: black;
+  }
+  .esconderNav{
+    left:0px;
+    transition-duration: .2s;
+    box-shadow: none;
+    box-shadow: 1px 0px 0px 2px #12508e;
+  }
+  .botonNav{
+    margin-left: 0px;
+    transition-duration: .2s;
+  }
+  .moverBotonNav{
+    margin-left: 270px;
+    transition-duration: .2s;
+  }
+}
 </style>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="z-index: 999;background:white!important;">
