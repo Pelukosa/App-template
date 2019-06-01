@@ -8,30 +8,21 @@
     <title>Panel principal</title>
   </head>
   <body>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light navTop fixed-top">
+<div class="fixed-top">
   <a class="navbar-brand botonNav" href="#" id="botonNav" onclick="hiddeNav()">
     <img class="iconBurguer" src="assets/icons/nav-burguer.svg"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <div class="dropdown accountTopNav">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Mi cuenta
   </button>
-
-  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-4">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="">
-          Cuenta
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left:-100px;">
-          <a class="dropdown-item" href="#">Nuevo trabajador</a>
-          <a class="dropdown-item" href="#">Configuración</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Cerrar sesión</a>
-        </div>
-      </li>
-    </ul>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Configuración</a>
+    <hr class="my-2">
+    <a class="dropdown-item" href="#">Cerrar sesión</a>
   </div>
-</nav>
+</div>
+</div>
+ 
 
 <nav class="nav flex-column fixed-top verticalNav" id="verticalNav">
   <div class="logo-nav-top">
@@ -73,34 +64,34 @@
       <th scope="col">Opciones</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="tableBody">
     <tr>
-      <th scope="row" style="border-right:1px solid #dee2e6">3</th>
-      <td style="border-right:1px solid #dee2e6">O01588-0219</td>
-      <td style="border-right:1px solid #dee2e6">
+      <td scope="row">3</td>
+      <td>O01588-0219</td>
+      <td>
         <p>Alejandro Recio</p>
         <p>C/ Real 111 Valdestillas, Valladolid</p>
         <p>634 975 939</p>
         <p>alejandrorecio.r@gmail.com</p>
       </td>
-      <td style="border-right:1px solid #dee2e6">Construir plataforma, añadir un nav visualmente agradable y funcional. Añadir php por todos ladosConstruir plataforma, añadir un nav visualmente agradable y funcional. Añadir php por todos ladosConstruir plataforma, añadir un nav visualmente agradable y funcional. Añadir php por todos lados</td>
-      <td style="border-right:1px solid #dee2e6">Thornton</td>
+      <td>Construir plataforma, añadir un nav visualmente agradable y funcional. Añadir php por todos ladosConstruir plataforma, añadir un nav visualmente agradable y funcional. Añadir php por todos ladosConstruir plataforma, añadir un nav visualmente agradable y funcional. Añadir php por todos lados</td>
+      <td>Thornton</td>
       <td>@mdo</td>
     </tr>
     <tr>
-      <th scope="row" style="border-right:1px solid #dee2e6">2</th>
-      <td style="border-right:1px solid #dee2e6">Jacob</td>
-      <td style="border-right:1px solid #dee2e6">Mark</td>
-      <td style="border-right:1px solid #dee2e6">Thornton</td>
-      <td style="border-right:1px solid #dee2e6">Thornton</td>
+      <td scope="row">2</td>
+      <td>Jacob</td>
+      <td>Mark</td>
+      <td>Thornton</td>
+      <td>Thornton</td>
       <td>@mdo</td>
     </tr>
     <tr>
-      <th scope="row" style="border-right:1px solid #dee2e6">1</th>
-      <td style="border-right:1px solid #dee2e6">Larry</td>
-      <td style="border-right:1px solid #dee2e6">Mark</td>
-      <td style="border-right:1px solid #dee2e6">the Bird</td>
-      <td style="border-right:1px solid #dee2e6">Thornton</td>
+      <td scope="row">1</td>
+      <td>Larry</td>
+      <td>Mark</td>
+      <td>the Bird</td>
+      <td>Thornton</td>
       <td>@mdo</td>
     </tr>
   </tbody>

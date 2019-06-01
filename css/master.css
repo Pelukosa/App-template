@@ -27,14 +27,15 @@ a{
     transition-duration: .2s;
   }
   .botonNav{
-    margin-left: 270px;
+    margin-left: 285px;
     transition-duration: .2s;
+    padding-top: 10px;
   }
   .moverBotonNav{
-    margin-left: 0px;
+    margin-left: 15px;
     transition-duration: .2s;
   }
-  .nav-link{
+  .navLeftText{
     border-bottom: 1px solid #343a4091;
     padding: 10px 25px;
     color:white;
@@ -47,43 +48,6 @@ a{
     color:white;
     background: #354c8e;
   }
-  @media only screen and (max-width: 850px) {
-  .verticalNav{
-    z-index: 1000;
-    height: -webkit-fill-available;
-    background:#4e73df;
-    box-shadow: none;
-    width: 270px;
-    left:-270px;
-    transition-duration: .2s;
-    color: black;
-  }
-  .esconderNav{
-    left:0px;
-    transition-duration: .2s;
-    box-shadow: none;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  }
-  .botonNav{
-    margin-left: 0px;
-    transition-duration: .2s;
-  }
-  .moverBotonNav{
-    margin-left: 270px;
-    transition-duration: .2s;
-  }
-  .main-container{
-    width: 100%;
-    margin-left: 0px;
-    margin-top:56px;
-    transition-duration: .2s;
-  }
-  .alargarContainer{
-    width: 100%;
-    margin-left: 0;
-    transition-duration: .2s;
-  }
-}
 .navTop{
   z-index: 999;
   background:white!important;
@@ -109,4 +73,58 @@ a{
 }
 .tableHead>tr>th{
   border-right:1px solid white;
+}
+.tableBody>tr>td{
+  border-right:1px solid #dee2e6;
+}
+.accountTopNav{
+  float: right;
+  padding: 10px 30px;
+}
+.accountTopNav>button{
+  background: none;
+  color: black;
+}
+
+
+
+
+
+
+  @media only screen and (max-width: 850px) {
+  .verticalNav{
+    z-index: 1000;
+    height: -webkit-fill-available;
+    background:#4e73df;
+    box-shadow: none;
+    width: 65%;
+    left:-65%;
+    transition-duration: .2s;
+    color: black;
+  }
+  .esconderNav{
+    left:0px;
+    transition-duration: .2s;
+    box-shadow: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  .botonNav{
+    margin-left: 10px;
+    transition-duration: .2s;
+  }
+  .moverBotonNav{
+    margin-left: calc(65% + 10px);
+    transition-duration: .2s;
+  }
+  .main-container{
+    width: 100%;
+    margin-left: 0px;
+    margin-top:56px;
+    transition-duration: .2s;
+  }
+  .alargarContainer{
+    width: 100%;
+    margin-left: 0;
+    transition-duration: .2s;
+  }
 }
